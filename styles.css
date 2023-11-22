@@ -1,0 +1,242 @@
+
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #ff0000;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+
+.why-choose-us {
+  background-image: url(wallpaper_emyl_light.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.why-choose-us {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.why-choose-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.featured-item {
+  background-color: white;
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-item {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 500px; /* Adjust the maximum width for the white boxes */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center; /* Center the content horizontally */
+  border-radius: 8px; /* Add rounded corners to the boxes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.product-image {
+  max-width: 400px; /* Adjust the maximum width for the product images */
+  height: auto;
+}
+
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('LED Dot-Matrix.ttf') format('truetype');
+} 
+
+h1 {
+  font-family: 'CustomFont', 'LED Dot-Matrix', sans-serif;
+  
+}
+
+
+body {
+  background-color: #efe6dc; 
+}
+
+
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; 
+  background-image: url(wallpaper_argesi_light.jpg); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+.featured-item {
+  text-align: center; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + .nav-links {
+    display: flex;
+  }
+}
